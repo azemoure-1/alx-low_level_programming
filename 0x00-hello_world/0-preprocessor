@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -E ^^%$[C[C[[$CFILE -o c
