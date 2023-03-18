@@ -1,29 +1,18 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
- * main - prints all the numbers of base 16 in lowercase
+ * main - Entry point
+ *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int n = 0;
-	char c;
+    int i;
 
-	while (n < 10)
-	{
-		c = n + '0';
-		putchar(c);
-		n++;
-	}
-	n = 0;
-	while (n < 6)
-	{
-		c = n + 'a';
-		putchar(c);
-		n++;
-	}
-	putchar('\n');
-
-	return (0);
+    for (i = 48; i <= 57; i++)
+        putchar(i);
+    for (i = 97; i <= 102; i++)
+        putchar(i);
+    putchar('\n');
+    return (0);
 }
