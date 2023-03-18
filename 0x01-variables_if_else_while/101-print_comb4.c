@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - Prints all possible different combinations of three digits
- *
- * Return: Always 0 (Success)
- */
 int main(void)
 {
     int i, j, k;
@@ -19,15 +14,16 @@ int main(void)
                 putchar(j + '0');
                 putchar(k + '0');
 
-                if (i != 7 || j != 8 || k != 9)
-                {
-                    putchar(',');
-                    putchar(' ');
-                }
+                if (i == 7 && j == 8 && k == 9)
+                    continue;
+
+                putchar(',');
+                putchar(' ');
             }
         }
     }
+
     putchar('\n');
 
-    return (0);
+    return 0;
 }
