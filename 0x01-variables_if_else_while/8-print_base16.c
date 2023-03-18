@@ -2,17 +2,24 @@
 
 /**
  * main - Entry point
- *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int i;
+    int num;
+    char letter;
 
-    for (i = 48; i <= 57; i++)
-        putchar(i);
-    for (i = 97; i <= 102; i++)
-        putchar(i);
+    for (num = 0; num < 10; num++)
+    {
+        putchar((num % 10) + '0');
+    }
+
+    for (letter = 'a'; letter <= 'f'; letter++)
+    {
+        putchar(letter);
+    }
+
     putchar('\n');
+
     return (0);
 }
