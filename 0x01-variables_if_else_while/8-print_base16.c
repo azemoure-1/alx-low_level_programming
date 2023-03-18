@@ -2,24 +2,24 @@
 
 /**
  * main - Entry point
+ * Description: prints all the numbers of base 16 in lowercase
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int num;
-    char letter;
+    int n = 48;
+    int letter = 97;
 
-    for (num = 0; num < 10; num++)
+    while (n < 58)
     {
-        putchar((num % 10) + '0');
+        putchar(n);
+        n++;
     }
-
-    for (letter = 'a'; letter <= 'f'; letter++)
+    while (letter < 103)
     {
         putchar(letter);
+        letter++;
     }
-
     putchar('\n');
-
     return (0);
 }
