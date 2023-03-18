@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE[D[C
+gcc -c $CFILE
