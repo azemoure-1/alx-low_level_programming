@@ -1,12 +1,26 @@
-#include <unistd.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
  *
- * Return: Always 1 (Error)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-	return (1);
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	printf("%d ", n);
+
+	if (n > 0)
+		printf("is positive\n");
+	else if (n < 0)
+		printf("is negative\n");
+	else
+		printf("is zero\n");
+
+	return (0);
 }
