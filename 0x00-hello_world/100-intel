@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Get the C file name from environment variable
+cfile=$CFILE
+
+# Remove the .c extension from the file name
+base=${cfile%.c}
+
+# Generate the assembly code with gcc
+gcc -S -masm=intel "$cfile"
+
+# Rename the output file to match the C file name
+mv "${base}.s" "$base"
