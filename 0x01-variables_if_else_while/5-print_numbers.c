@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - prints all single digit numbers of base 10 starting from 0
+ * main - Entry point
+ *
+ * Description: Prints all single digit numbers of base 10 starting from 0
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int num;
+    int i;
 
-    for (num = 0; num < 10; num++)
+    for (i = 0; i < 10; i++)
     {
-        putchar(num + '0');
+        putchar(i + '0');
     }
-
     putchar('\n');
-
     return (0);
 }
