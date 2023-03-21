@@ -1,16 +1,20 @@
-#include <unistd.h>
+#include "main.h"
 
+/**
+ * main - Entry point
+ * Description: Write a program that prints _putchar, followed by a new line.
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-    char str[] = "_putchar\n";
-    int i = 0;
-
-    while (str[i] != '\0')
-    {
-        /* using the write function to print the character */
-        write(1, &str[i], 1);
-        i++;
-    }
-
+    _putchar('_');
+    _putchar('p');
+    _putchar('u');
+    _putchar('t');
+    _putchar('c');
+    _putchar('h');
+    _putchar('a');
+    _putchar('r');
+    _putchar('\n');
     return (0);
 }
