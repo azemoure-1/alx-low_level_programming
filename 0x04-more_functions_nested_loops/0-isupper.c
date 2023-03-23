@@ -8,8 +8,10 @@
  */
 int _isupper(int c)
 {
-	if (c >= 65 && c <= 90)
-		return (1);
-	else
-		return (0);
+    /* ASCII values for uppercase letters are between 65 and 90 */
+    if (c >= 65 && c <= 90)
+        return 1;
+    else
+        return 0;
 }
+
