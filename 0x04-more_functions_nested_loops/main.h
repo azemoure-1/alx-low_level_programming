@@ -5,6 +5,8 @@
 
 int _putchar(char C);
 
+int _isupper(int c);
+
 void print_alphabet(void);
 
 void print_alphabet_x10(void);
