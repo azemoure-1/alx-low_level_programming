@@ -6,7 +6,7 @@
  * @c: input fo alphabet
  * Return: 1 if uppercase. 0 if not
  */
-int _isupper(int c)
+int _isupper(int C)
 {
     /* ASCII values for uppercase letters are between 65 and 90 */
 	if (c >= 65 && c <= 90)

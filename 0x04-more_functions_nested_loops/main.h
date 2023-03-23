@@ -3,8 +3,8 @@
 
 #include <stdio.h>
 
-int _putchar(char c);
-int _isupper(int c);
+int _putchar(char C);
+int _isupper(int C);
 
 #endif
 
