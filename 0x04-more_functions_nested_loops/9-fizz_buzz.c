@@ -5,7 +5,6 @@
  *        Numbers that are multiples of 3 print "Fizz".
  *        Numbers that are multiples of 5 print "Buzz".
  *        Numbers that are multiples of both 3 and 5 print "FizzBuzz".
- *
  * Return: Always 0 (Success)
  */
 int main(void)
