@@ -3,21 +3,29 @@
 #include <limits.h>
 
 /**
- * main - check the code
+ * _atoi - converts a string to an integer.
+ * @s: string to be converted
  *
- * Return: Always 0.
+ * Return: the integer value of the string
+ *         0 if there are no numbers in the string
  */
-int main(void)
+int _atoi(char *s)
 {
-	int i;
-	unsigned int ui;
+	int i = 0;
+	int sign = 1;
+	int num = 0;
 
-	ui = (unsigned int)INT_MAX + 1024;
-	i = printf("%d\n", (int)ui);
-	printf("Length: %d\n", i);
-	ui = (unsigned int)INT_MIN - 1024;
-	i = printf("%d\n", (int)ui);
-	printf("Length: %d\n", i);
-	return (0);
+	while (s[i] != '\0')
+	{
+		if (s[i] == '-')
+			sign *= -1;
+		if (s[i] >= '0' && s[i] <= '9')
+			num = num * 10 + (s[i] - '0');
+		if (num != 0 && !(s[i] >= '0' && s[i] <= '9'))
+			break;
+		i++;
+	}
+
+	return (num * sign);
 }
 
