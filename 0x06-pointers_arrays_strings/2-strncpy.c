@@ -9,9 +9,11 @@
  *
  * Return: a pointer to the destination buffer
  */
+
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
+
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
 	dest[i] = src[i];
@@ -20,6 +22,6 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 	dest[i] = '\0';
 	}
-	return dest;
+	return (dest);
 }
 
