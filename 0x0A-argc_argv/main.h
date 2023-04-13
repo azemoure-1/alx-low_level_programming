@@ -5,7 +5,8 @@
 
 int _putchar(char C);
 int main(int argc, char *argv[]);
-
+int main(int argc, char **argv);
+int main(int argc, char **argv);
 
 #endif
 
