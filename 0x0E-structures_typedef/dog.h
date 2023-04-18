@@ -10,6 +10,7 @@
  * Description: A structure representing a dog, with name, age, and owner
  *              information.
  */
+void free_dog(dog_t *d);
 typedef struct dog
 {
 	char *name;
