@@ -8,8 +8,8 @@
  * @argc: Number of arguments passed to the program
  * @argv: Array of string arguments passed to the program
  *
- * Return: 0 on success, 98 on wrong number of arguments, 99 on invalid operator,
- * 100 on division/modulo by zero, or exit status of the selected operation function
+ * Return: 0 on success,
+ * 100 on division/modulo by zero, or exit status
  */
 int main(int argc, char **argv)
 {
